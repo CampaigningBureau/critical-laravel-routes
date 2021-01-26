@@ -17,7 +17,7 @@ class Manager
                                                                           $currentUri;
 
         // check  if the critical routes file exists and can be parsed
-        if (!\File::exists(base_path(config('critical-laravel-routes.file-name')))) {
+        if (!file_exists(base_path(config('critical-laravel-routes.file-name')))) {
             return;
         }
 
@@ -37,7 +37,7 @@ class Manager
         }
 
         // if the css with the given name exists, return it
-        if (\File::exists(public_path('css/' . $match->template . config('critical-laravel-routes.suffix') . '.css'))) {
+        if (file_exists(public_path('css/' . $match->template . config('critical-laravel-routes.suffix') . '.css'))) {
             return '<link
             href="' . asset('css/' . $match->template . config('critical-laravel-routes.suffix') . '.css') . '"
             rel="stylesheet"

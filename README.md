@@ -50,10 +50,13 @@ The package gets automatically discovered by Laravel.
    ```
    {!! \CriticalLaravelRoutes::linkCriticalCss() !!}
    ```
-   
+
+   This can be used safely vor every existing route, so it is best to put it in the base layout. If no critical css file
+   is found for a route, nothing is displayed.
+
 ## Configuration
 
-The config can be changed by publishing the configuration file
+The config can be changed by publishing the configuration file:
 
 ```shell
 $ php artisan vendor:publish --provider="CampaigningBureau\CriticalLaravelRoutes\CriticalLaravelRoutesServiceProvider"
