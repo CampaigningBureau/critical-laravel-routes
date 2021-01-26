@@ -23,7 +23,7 @@ The package gets automatically discovered by Laravel.
 
 2. Generate the JSON that contains all critical routes:
    ```shell
-   php artisan create:critical-urls
+   php artisan critical-urls:generate
    ```
 
 3. The generated file needs to be required in the webpack.mix.js and set as `urls` when creating the critical css:
