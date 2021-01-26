@@ -3,7 +3,7 @@
     "description": "Automatically create and link Critical CSS for static routes in Laravel projects",
     "authors": [
         {
-            "name": "Stean Schindler",
+            "name": "Stefan Schindler",
             "email": "stefan.schindler@campaigning-bureau.com"
         }
     ],
