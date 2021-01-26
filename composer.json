@@ -1,0 +1,30 @@
+{
+    "name": "campaigningbureau/critical-laravel-routes",
+    "description": "Automatically create and link Critical CSS for static routes in Laravel projects",
+    "authors": [
+        {
+            "name": "Stean Schindler",
+            "email": "stefan.schindler@campaigning-bureau.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CampaigningBureau\\CriticalLaravelRoutes\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CampaigningBureau\\CriticalLaravelRoutes\\CriticalLaravelRoutesServiceProvider"
+            ],
+            "aliases": {
+                "CriticalLaravelRoutes": "CampaigningBureau\\CriticalLaravelRoutes\\Facades\\Facade"
+            }
+        }
+    }
+}
