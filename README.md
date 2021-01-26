@@ -9,7 +9,7 @@ Supports Laravel 7.*
 Just require the package via composer:
 
 ```
-composer require campaigningbureau/critical-laravel-routes --dev
+composer require campaigningbureau/critical-laravel-routes
 ```
 
 The package gets automatically discovered by Laravel.
