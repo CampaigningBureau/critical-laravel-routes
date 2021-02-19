@@ -45,7 +45,14 @@ The package gets automatically discovered by Laravel.
    ```
    When generating the css, one css file per defined route is created and saved.
 
-4. Automatically import the critical css (if it exists for the route) in the blade template:
+4. Automatically import the content of the critical css file (if it exists for the route) in the blade template as
+   inline styles:
+
+   ```
+   {!! \CriticalLaravelRoutes::inlineCriticalCss() !!}
+   ```
+
+   Alternatively, the critical css file can be linked with:
 
    ```
    {!! \CriticalLaravelRoutes::linkCriticalCss() !!}
