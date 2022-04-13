@@ -17,8 +17,8 @@ The package gets automatically discovered by Laravel.
 ## Usage
 
 1. All static routes, that should use critical css, need to be named and have a `critical` attribute set to `true`:
-   ```
-   Route::get('/', ['as' => 'index', 'uses' => 'ViewController@index', 'critical'=>'index']);
+   ```php
+   Route::get('/', ['as' => 'index', 'uses' => 'ViewController@index', 'critical' => true]);
    ```
 
 2. Generate the JSON that contains all critical routes:
